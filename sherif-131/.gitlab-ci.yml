@@ -1,0 +1,12 @@
+stages: [check]
+
+check_sherif:
+  image: node:22.17.0-alpine
+  stage: check
+  script:
+    - node -v
+    - npm -v
+    - echo "Printing packages/api/package.json for verification:"
+    - cat packages/api/package.json
+    - npx --yes sherif@1.6.1
+
