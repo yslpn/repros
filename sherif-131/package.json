@@ -1,10 +1,13 @@
 {
   "name": "@repro/root",
   "private": true,
-  "packageManager": "npm@10.9.2",
+  "packageManager": "pnpm@11.5.0",
+  "engines": {
+    "node": ">=24",
+    "pnpm": ">=11"
+  },
   "workspaces": ["packages/api"],
   "scripts": {
     "sherif": "sherif"
   }
 }
-

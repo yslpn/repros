@@ -15,8 +15,8 @@ With `compilers.scss: true`, Knip should count `@fontsource/lato` as a used pack
 ## Reproduction
 
 ```sh
-npm install
-npm run knip
+pnpm install
+pnpm run knip
 ```
 
 Expected: no unused dependency report for `@fontsource/lato`.
