@@ -1,0 +1,8 @@
+@use '@fontsource/lato/scss/mixins' as Lato;
+
+@include Lato.fontFace(
+  $fontName: 'Lato',
+  $weight: 400,
+  $display: swap,
+  $fontDir: '@fontsource/lato/files'
+);

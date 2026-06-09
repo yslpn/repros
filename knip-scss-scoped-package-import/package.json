@@ -1,0 +1,16 @@
+{
+  "name": "knip-scss-scoped-package-import",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "knip": "knip"
+  },
+  "dependencies": {
+    "@fontsource/lato": "5.0.17"
+  },
+  "devDependencies": {
+    "knip": "6.15.0",
+    "typescript": "5.9.3"
+  }
+}
