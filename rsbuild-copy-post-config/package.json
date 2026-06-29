@@ -1,0 +1,17 @@
+{
+  "name": "rsbuild-copy-post-config-repro",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.7.0",
+  "engines": {
+    "node": ">=24",
+    "pnpm": ">=11"
+  },
+  "scripts": {
+    "dev": "rsbuild dev"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "2.1.1"
+  }
+}
