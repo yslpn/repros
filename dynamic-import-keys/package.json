@@ -1,0 +1,22 @@
+{
+  "name": "dynamic-import-keys-repro",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm run build:vite",
+    "build:vite": "vite build",
+    "build:rsbuild": "rsbuild build",
+    "check": "tsc --noEmit",
+    "probe:valibot:vite": "vite build --config vite.valibot.config.ts",
+    "probe:valibot:rsbuild": "rsbuild build --config rsbuild.valibot.config.ts"
+  },
+  "dependencies": {
+    "@valibot/i18n": "1.2.0"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "2.1.13",
+    "typescript": "6.0.2",
+    "vite": "8.2.1"
+  }
+}
