@@ -51,6 +51,13 @@ Result:
   resolution unless the application configures an import map separately;
 - Rsbuild fails to resolve `@valibot/i18n` as a context module.
 
+The relevant Rsbuild error is:
+
+```text
+File: ./src/valibot-import.ts:1:1
+  × Module not found: Can't resolve '@valibot/i18n'
+```
+
 The reason is that the local import has a statically visible directory context
 (`./locales/`), while the package import only exposes the package name. The
 current `@valibot/i18n` `exports` map lists concrete subpaths such as `./de`
@@ -66,7 +73,7 @@ and the [Rspack context replacement documentation](https://rspack.rs/plugins/web
 For package subpaths, both the bundler's context support and the package's
 public `exports` pattern must be compatible.
 
-A practical application-level solution is an explicit loader map:
+A practical application-level workaround is an explicit loader map:
 
 ```ts
 const loaders = {
